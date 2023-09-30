@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  font-family: poppins;
+  overflow-y: auto;
+}
+#title{
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  
+}
+
+/*Navigation bar section*/
+.navbar{
+  margin-top: 0px;
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar > a{
+  color: #fff;
+  font-size: 3.5rem;
+  text-decoration: none;
+  text-align: left;
+}
+.navbar ul{
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.navbar ul li{
+  color: dimgray;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.7rem;
+  filter:opacity(.3);
+  font-weight: 800;
+}
+.navbar > ul > li > a:hover{
+  color: #fff;
+}
+/*Title page with iphone inside of dog selfie image*/
+.download-btn{
+  padding: 16px 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(20,30,40,0.85);
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0px 5px;
+}
+.first-btn:hover{
+  background-color: black;
+  transition: 500ms;
+}
+.second-btn{
+  background:none;
+  border: 1px solid white;
+}
+.second-btn:hover{
+  background-color: #fff;
+  color: black;
+  transition: 500ms;
+}
+
+.title-content > h2{
+  color: #fff;
+  font-weight: 800;
+  font-size: 4.5rem;
+}
+.title-container{
+  display: flex;
+  margin: 0px 270px;
+  margin-top: 70px;
+}
+.title-container > img{
+  padding: 5px;
+  padding-top: 10px;
+  transform: rotate(30deg) translateY(50px) translateX(-100px);
+  z-index: 0;
+}
+
+/* features section*/
+#features{
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  margin:100px 270px;
+  z-index: 999;
+  background-color: #fff;
+}
+.feature-container > svg{
+  height: 100px;
+  color: #ff4c68;
+}
+.feature-container{
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.feature-container > h2{
+  font-size: 3rem;
+  font-weight: 600;
+}
+.feature-container > p{
+  font-size: 1.6rem;
+  opacity: 0.7;
+}
+
+/* slide show above the content*/
+#testimonial{
+  background-color: #ef8172;
+  height: 800px;
+  margin-top: 70px;
+}
+.slide-container{
+  margin: 130px 270px;
+}
+
+.slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+
+}
+.slides > h2{
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgba(20,30,40,0.85);
+}
+.slide-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  color: #fff;
+}
+.slide-img > img{
+  border-radius: 50%;
+}
+.slide-img > p{
+  font-size: 1.4rem;
+}
+.slide2{
+  display: none;
+}
+
+.slide-button{
+  padding: 5px;
+}
+
+/* #prevbtn{
+  top:-100px;
+  left: -50px;
+}
+#nextbtn{
+  right: -50px;
+  top: -100px;
+} */
+
+
+/* img container section on slide show*/
+.img-container{
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  align-content: center;
+}
+.img-container > img{
+  height: 100px;
+}
+#techcrunch{
+  height: 50px;
+}
+#bussiness{
+  height: 50px;
+}
+#mashable{
+  height: 50px;
+}
+
+#pricing > h2{
+  font-size: 3.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+#pricing > p{
+  font-size: 1.6rem;
+  text-align: center;
+}
+.pricing-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.price-item{
+  border: 1px solid black;
+  padding: 0px 100px;
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.pricing-head{
+  font-size: 3rem;
+  font-weight: 500;
+}
+.pricing-inner > h2{
+  font-size: 2.4rem;
+}
+.pricing-inner > p{
+  font-size: 1.4rem;
+}
+.signup-btns{
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid black;
+  color: rgba(20,30,40,0.85);
+}
+#Chihuahua-btn:hover{
+  color: #fff;
+  background-color: #000;
+}
+#Labrador-btn, #Mastiff-btn{
+  color: #fff;
+  background-color: rgba(20,30,40,0.9);
+}
+#Labrador-btn:hover, #Mastiff-btn:hover{
+  background-color: #000;
+}
+#download{
+  background-color: #ff4c68;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0px;
+  margin-top: 200px;
+}
+#download > h1{
+  font-size: 5rem;
+  text-align: center;
+  margin: 0px 270px;
+  font-weight: 600;
+  color: #fff;
+}
+.item-3{
+  padding-bottom: 50px;
+}
+
+
+/* footer items*/
+
+.footer{
+  margin:100px 0px;
+  height: 600px;
+}
+.social{
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+}
+.social > a > svg{
+  font-size: 1.5rem;
+  height: 50px;
+  color: black;
+} 
+#twitter svg:hover{
+  color: #fff;
+  background-color: rgba(20,30,40,0.9);
+}
+#facebook svg:hover{
+  background-color: rgba(20,30,40,0.9);
+  color: #fff;
+}
+#instagram svg:hover{
+  color: #fff;
+  background-color: rgba(20,30,40,0.9);
+}
+#mail svg:hover{
+  color: #fff;
+  background-color: rgba(20,30,40,0.9);
+}
+
+.copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.copyright > p{
+  font-size: 1.3rem;
+  color: rgba(20,30,40,0.9);
+}
